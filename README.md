@@ -1,3 +1,3 @@
-Learn Different Logical programs to improve our logical and problem solving skill.
+Practice DSA and problems solving(Logical Thinking).
 
 Happy to learn.
