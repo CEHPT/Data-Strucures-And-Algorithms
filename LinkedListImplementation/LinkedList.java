@@ -27,13 +27,6 @@ public class LinkedList<T> implements Iterable<T> {
 
         Node newNode = new Node(value);
 
-        //when list is empty
-        if (newNode.next != null) {
-            head = newNode;
-            return;
-        }
-
-        // list is not empty
         newNode.next = head;
         head = newNode;
     }
@@ -230,6 +223,23 @@ public class LinkedList<T> implements Iterable<T> {
         }
 
         return length;
+    }
+
+    public void reverse(){
+
+        Node prev = null;
+        Node current = head;
+
+        while(current != null){
+
+            Node next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        head = prev;
+
     }
 }
 
